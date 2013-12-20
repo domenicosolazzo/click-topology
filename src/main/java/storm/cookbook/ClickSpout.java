@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * User: domenicosolazzo
  */
 public class ClickSpout extends BaseRichSpout {
-    public static Logger LOG = Logger.getLogger(ClickSpout.class);
+    public static Logger LOG = Logger.getLogger(ClickSpout.class.toString());
 
     private Jedis jedis;
     private String host;

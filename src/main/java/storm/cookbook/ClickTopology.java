@@ -21,7 +21,7 @@ public class ClickTopology {
     public static final String DEFAULT_REDIS_PORT = "6379";
 
     public ClickTopology(){
-        builder.setSpout("clickSpout", new ClickSput(), 10);
+        builder.setSpout("clickSpout", new ClickSpout(), 10);
 
         // First layer of bolts
         builder.setBolt("repeatsBolt", new RepeatVisitBolt(), 10)
