@@ -1,6 +1,5 @@
 package storm.cookbook;
 
-import backtype.storm.bootstrap__init;
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
