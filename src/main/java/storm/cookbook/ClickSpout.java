@@ -20,6 +20,7 @@ public class ClickSpout extends BaseRichSpout {
     public static Logger LOG = Logger.getLogger(ClickSpout.class.toString());
 
     private Jedis jedis;
+
     private String host;
     private int port;
     private SpoutOutputCollector collector;

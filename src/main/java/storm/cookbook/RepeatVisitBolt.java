@@ -23,7 +23,7 @@ public class RepeatVisitBolt extends BaseRichBolt {
 
     @Override
     public void prepare(Map conf, TopologyContext topologyContext, OutputCollector outputCollector) {
-        this.collector = collector;
+        this.collector = outputCollector;
         host = conf.get(Conf.REDIS_HOST_KEY).toString();
         port = Integer.valueOf(conf.get(Conf.REDIS_PORT_KEY).toString());
         connectToRedis();

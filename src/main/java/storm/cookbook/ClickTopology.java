@@ -83,7 +83,7 @@ public class ClickTopology {
             if( args != null && args.length == 1){
                 System.out.println("Running in local mode, redis ip missing for cluster run");
             }
-            topology.runLocal(10000);
+            topology.runLocal(50000);
         }
 
     }
